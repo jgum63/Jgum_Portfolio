@@ -5,6 +5,7 @@
 body {
     background-color: antiquewhite;
 }
+
 header {
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -35,15 +36,15 @@ header nav ul li {
     margin-left: 25px;
 }
 
-section 2{
-    display: inline-flex;
-    margin-left: 40px;
-    margin-top: 40px;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-section h2 {
+section > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 main {
@@ -51,4 +52,14 @@ main {
     grid-template-columns: 1fr 1fr;
     border-right: 1px solid black;
     padding: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer  ul {
+    list-style-type: none;
 }
